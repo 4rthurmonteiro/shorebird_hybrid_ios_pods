@@ -1,0 +1,94 @@
+PODS:
+  - "datadog_flutter_plugin (0.0.1+2)":
+    - DatadogCore (= 2.13.0)
+    - DatadogCrashReporting (= 2.13.0)
+    - DatadogInternal (= 2.13.0)
+    - DatadogLogs (= 2.13.0)
+    - DatadogRUM (= 2.13.0)
+    - DictionaryCoder (= 1.0.8)
+    - Flutter
+  - DatadogCore (2.13.0):
+    - DatadogInternal (= 2.13.0)
+  - DatadogCrashReporting (2.13.0):
+    - DatadogInternal (= 2.13.0)
+    - PLCrashReporter (~> 1.11.2)
+  - DatadogInternal (2.13.0)
+  - DatadogLogs (2.13.0):
+    - DatadogInternal (= 2.13.0)
+  - DatadogRUM (2.13.0):
+    - DatadogInternal (= 2.13.0)
+  - DatadogSessionReplay (2.13.0):
+    - DatadogInternal (= 2.13.0)
+  - DictionaryCoder (1.0.8)
+  - Flutter (3.22.2)
+  - "flutter_module (1.0.0+2)"
+  - FlutterPluginRegistrant (0.0.1):
+    - datadog_flutter_plugin
+    - Flutter
+    - webview_flutter_wkwebview
+  - GoogleMaps (7.3.0):
+    - GoogleMaps/Maps (= 7.3.0)
+  - GoogleMaps/Base (7.3.0)
+  - GoogleMaps/Maps (7.3.0):
+    - GoogleMaps/Base
+  - PLCrashReporter (1.11.2)
+  - "webview_flutter_wkwebview (0.0.1+3)":
+    - Flutter
+
+DEPENDENCIES:
+  - datadog_flutter_plugin (from `../multiple_flutters_module/.ios/.symlinks/plugins/datadog_flutter_plugin/ios`)
+  - DatadogCore (= 2.13.0)
+  - DatadogCrashReporting (= 2.13.0)
+  - DatadogInternal (= 2.13.0)
+  - DatadogLogs (= 2.13.0)
+  - DatadogRUM (= 2.13.0)
+  - DatadogSessionReplay (= 2.13.0)
+  - Flutter (from `../multiple_flutters_module/release/Flutter/Flutter.podspec`)
+  - flutter_module (from `../multiple_flutters_module/release/flutter_module/flutter_module.podspec`)
+  - FlutterPluginRegistrant (from `../multiple_flutters_module/.ios/Flutter/FlutterPluginRegistrant`)
+  - GoogleMaps (= 7.3.0)
+  - webview_flutter_wkwebview (from `../multiple_flutters_module/.ios/.symlinks/plugins/webview_flutter_wkwebview/ios`)
+
+SPEC REPOS:
+  trunk:
+    - DatadogCore
+    - DatadogCrashReporting
+    - DatadogInternal
+    - DatadogLogs
+    - DatadogRUM
+    - DatadogSessionReplay
+    - DictionaryCoder
+    - GoogleMaps
+    - PLCrashReporter
+
+EXTERNAL SOURCES:
+  datadog_flutter_plugin:
+    :path: "../multiple_flutters_module/.ios/.symlinks/plugins/datadog_flutter_plugin/ios"
+  Flutter:
+    :podspec: "../multiple_flutters_module/release/Flutter/Flutter.podspec"
+  flutter_module:
+    :podspec: "../multiple_flutters_module/release/flutter_module/flutter_module.podspec"
+  FlutterPluginRegistrant:
+    :path: "../multiple_flutters_module/.ios/Flutter/FlutterPluginRegistrant"
+  webview_flutter_wkwebview:
+    :path: "../multiple_flutters_module/.ios/.symlinks/plugins/webview_flutter_wkwebview/ios"
+
+SPEC CHECKSUMS:
+  datadog_flutter_plugin: 57ec303781c17a111554826a6e6ce9d77fd3a3f2
+  DatadogCore: 9390fd07a89f57a23983de66fbec5bf3c2034f7a
+  DatadogCrashReporting: 79b67b790df186524fc76d45c0b8ce751c36ef41
+  DatadogInternal: 61ab12516d2faad79e35973534c29a72b0d44382
+  DatadogLogs: 912d7b3fd3d75df856de060082b785f92f7cefe6
+  DatadogRUM: b5629479d4553d80f2a57ef9db44ce37e56f8b97
+  DatadogSessionReplay: 2e7795c1a8a86ff989ed5c0ccd616eed0f6c9a3a
+  DictionaryCoder: 5f84fff69f54cb806071538430bdafe04a89d658
+  Flutter: 265860026dd072d4cda40896722e8591b37bbea5
+  flutter_module: e74e69931c4b15992c0bf5119082d6bcb1832ff8
+  FlutterPluginRegistrant: 53f49af261dc34ff0b191fcfd52526987ece6144
+  GoogleMaps: a146f275ee429d14822178c7a841c03366ec92a1
+  PLCrashReporter: 499c53b0104f95c302d94fd723ebb03c56d9bac8
+  webview_flutter_wkwebview: 731bae1b2a7288a9278a1b292372a87bc8cc495e
+
+PODFILE CHECKSUM: 6434958ef87a687a4d2db0fd7da7bf8aa40fe3b9
+
+COCOAPODS: 1.15.2

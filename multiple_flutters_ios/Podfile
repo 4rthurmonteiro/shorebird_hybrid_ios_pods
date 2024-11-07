@@ -1,0 +1,30 @@
+# Copyright 2021 The Flutter team. All rights reserved.
+# Use of this source code is governed by a BSD-style license that can be
+# found in the LICENSE file.
+platform :ios, '14.0'
+
+flutter_application_path = '../multiple_flutters_module'
+load File.join(flutter_application_path, '.ios', 'Flutter', 'podhelper.rb')
+framework_path = "../multiple_flutters_module/release"
+
+target 'MultipleFluttersIos' do
+  use_frameworks!
+  pod 'Flutter', :podspec => "#{framework_path}/Flutter/Flutter.podspec"
+  pod 'flutter_module', :podspec => "#{framework_path}/flutter_module/flutter_module.podspec"
+
+  require File.expand_path(File.join('packages', 'flutter_tools', 'bin', 'podhelper'), flutter_root)
+  install_flutter_plugin_pods(flutter_application_path)
+
+  def ddVersion = '2.13.0'
+  
+  pod 'DatadogCore', ddVersion
+  pod 'DatadogLogs', ddVersion
+  pod 'DatadogRUM', ddVersion
+  pod 'DatadogInternal', ddVersion
+  pod 'DatadogCrashReporting', ddVersion
+  pod 'DatadogSessionReplay', ddVersion
+end
+
+post_install do |installer|
+  flutter_post_install(installer) if defined?(flutter_post_install)
+end
